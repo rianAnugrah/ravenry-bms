@@ -8,13 +8,13 @@ const Header = () => {
         <span>Ravenry BMS</span>
       </h1>
       <p className={headerStyles.description}>Meet the best Freelancer</p>
-      <style jsx>
+      {/* <style jsx>
         {`
           .title {
             color: ${x > 3 ? "blue" : "red"};
           }
         `}
-      </style>
+      </style> */}
     </div>
   );
 };
