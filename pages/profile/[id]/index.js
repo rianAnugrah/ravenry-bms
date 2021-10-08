@@ -1,5 +1,5 @@
 import React from "react";
-const profile = ({ profile }) => {
+const profileDetail = ({ profile }) => {
   console.log(profile);
   return <div>PRofile</div>;
 };
@@ -18,4 +18,4 @@ export const getServerSideProps = async (context) => {
   };
 };
 
-export default profile;
+export default profileDetail;
