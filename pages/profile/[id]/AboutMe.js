@@ -61,7 +61,7 @@ const AboutMe = ({ profile }) => {
           </Pane>
           <Pane display="flex" flexDirection="row">
             {Expertises.map((ex) => {
-              return <Tag>{ex.name}</Tag>;
+              return <Tag key={ex.id}>{ex.name}</Tag>;
             })}
           </Pane>
         </Pane>
@@ -78,7 +78,7 @@ const AboutMe = ({ profile }) => {
           <Pane>
             {Languages.map((lang) => {
               return (
-                <Pane>
+                <Pane Pane key={lang.id}>
                   <Text size={400}>{lang.name}</Text>
                   <br />
                   <Text size={300} color="muted">

@@ -11,12 +11,12 @@ const ServicesList = ({ services }) => {
       <Pane marginTop={24}>
         {services.map((service) => {
           return (
-            <>
+            <Pane key={service.id}>
               <ServicesItem service={service} />
               <ServicesItem service={service} />
               <ServicesItem service={service} />
               <ServicesItem service={service} />
-            </>
+            </Pane>
           );
         })}
       </Pane>

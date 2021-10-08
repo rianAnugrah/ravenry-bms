@@ -11,11 +11,11 @@ const Testimony = ({ services }) => {
       <Pane marginTop={24} display="flex" flexDirection="row">
         {services.map((service) => {
           return (
-            <>
+            <Pane key={service.id}>
               <TestimonyItem service={service} />
               <TestimonyItem service={service} />
               <TestimonyItem service={service} />
-            </>
+            </Pane>
           );
         })}
       </Pane>
