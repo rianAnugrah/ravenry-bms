@@ -8,21 +8,20 @@ export default function Home({ articles }) {
         <title>Ravenry BMS</title>
         <meta name="freelancing" content="freelancer, portfolio, matchmaking" />
       </Head>
-      <ArticleList articles={articles} />
     </div>
   );
 }
 
-export const getStaticProps = async () => {
-  const res = await fetch(
-    "https://jsonplaceholder.typicode.com/posts?_limit=6"
-  );
+// export const getStaticProps = async () => {
+//   const res = await fetch(
+//     "https://jsonplaceholder.typicode.com/posts?_limit=6"
+//   );
 
-  const articles = await res.json();
+//   const articles = await res.json();
 
-  return {
-    props: {
-      articles,
-    },
-  };
-};
+//   return {
+//     props: {
+//       articles,
+//     },
+//   };
+// };

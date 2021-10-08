@@ -6,8 +6,7 @@ const profile = ({ profile }) => {
 
 export const getServerSideProps = async (context) => {
   const res = await fetch(
-    // `http://localhost:1337/profiles/${context.params.id}`
-    process.env.API_HOST
+    `${process.env.API_HOST}/profiles/${context.params.id}`
   );
 
   const profile = await res.json();
