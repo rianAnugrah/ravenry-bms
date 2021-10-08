@@ -1,6 +1,8 @@
 import React from "react";
 const profileDetail = ({ profile }) => {
   console.log(profile);
+  console.log("node js only", process.env.API_HOST);
+
   return <div>PRofile</div>;
 };
 
