@@ -16,3 +16,32 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  /* height: ${isMobile ? '0px' : '8px'}; */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey;  */
+
+  border-radius: 4px;
+  padding :8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* background: ${colors.black10};  */
+  background: #e7eaf0; 
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0050C5; 
+}
+
+/* end of Scrollbar custom */
+
