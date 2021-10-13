@@ -7,7 +7,7 @@ const profileDetail = ({ profile }) => {
   return (
     <Layout>
       <AboutMe profile={profile ? profile : []} />
-      <ServicesList services={profile.services ? profile.services : []} />
+      <ServicesList url={process.env.API_HOST} services={profile.services ? profile.services : []} />
       <Testimony services={profile.services ? profile.services : []} />
     </Layout>
   );
